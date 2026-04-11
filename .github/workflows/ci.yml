@@ -29,5 +29,6 @@ jobs:
 
     - name: Rodar Testes (Pytest)
       run: |
-        export PYTHONPATH=$PYTHONPATH:$(pwd)/src
         python -m pytest tests/
+      env:
+        PYTHONPATH: ${{ github.workspace }}/src
