@@ -1,6 +1,6 @@
 # CuidadoCLI 💊
 
-[![CI Pipeline](https://github.com/GabrielMSM2/cuidado-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/GabrielMSM2/cuidado-cli/actions)
+[![CI Pipeline](https://github.com/GabrielMSM2/CuidadosCLI/actions/workflows/ci.yml/badge.svg)](https://github.com/GabrielMSM2/CuidadosCLI/actions)
 
 ## 🎯 Apresentação e Problema Real
 O **CuidadoCLI** nasceu para resolver uma dor real e muito presente na nossa sociedade: **a dificuldade no controle de horários de medicamentos para idosos ou pessoas em tratamento contínuo**. 
