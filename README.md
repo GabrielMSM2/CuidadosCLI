@@ -1,29 +1,52 @@
-# CuidadoCLI 💊
+CuidadoCLI 💊
 
-[![CI Pipeline](https://github.com/GabrielMSM2/CuidadosCLI/actions/workflows/ci.yml/badge.svg)](https://github.com/GabrielMSM2/CuidadosCLI/actions)
+[![CI Pipeline](https://github.com/GabrielMSM2/CuidadosCLI/actions/workflows/ci.yml/badge.svg)](https://github.com/GabrielMSM2/CuidadosCLIactions)
 
-## 🎯 Apresentação e Problema Real
-O **CuidadoCLI** nasceu para resolver uma dor real e muito presente na nossa sociedade: **a dificuldade no controle de horários de medicamentos para idosos ou pessoas em tratamento contínuo**. 
+O CuidadoCLI é uma aplicação de linha de comando desenvolvida para auxiliar cuidadores e familiares na organização de horários de medicamentos. O foco principal é a simplicidade e a confiabilidade, garantindo que o registro e a consulta de remédios sejam feitos de forma rápida e segura.
 
-Muitos cuidadores (profissionais ou familiares) lidam com múltiplas tarefas diárias, o que pode levar a confusões, superdosagem ou esquecimento da medicação, colocando a saúde do paciente em risco. O público-alvo desta solução são **cuidadores, familiares e as próprias pessoas em tratamento** que precisam de uma ferramenta simples e livre de distrações.
+🎯 Problema Real
+Dificuldade no controle de múltiplos horários de medicamentos para idosos ou pessoas em tratamentos contínuos, o que pode levar a esquecimentos ou erros de dosagem.
 
-## 💡 A Solução
-Em vez de depender de anotações soltas em papel, o CuidadoCLI oferece uma aplicação de Linha de Comando (CLI) direta e eficiente. Ela permite que o cuidador registre o nome do remédio e o horário exato da administração, organizando a rotina de cuidados de forma rápida pelo terminal.
+⚙️ Integração Contínua (CI)
+Este projeto implementa um pipeline de CI (Continuous Integration) via GitHub Actions.
+A cada atualização no código, o servidor executa automaticamente:
 
-## ✨ Funcionalidades Principais
-- Cadastrar novo medicamento informando nome e horário.
-- Listar todos os medicamentos cadastrados para conferência.
-- Validação de dados (impede o cadastro de medicamentos sem nome ou sem horário).
+Análise Estática (Flake8): Garante que o código siga os padrões de formatação e qualidade PEP-8.
 
-## 💻 Exemplo de Uso
-```text
-=== Bem-vindo ao CuidadoCLI ===
-O seu assistente para horários de medicamentos.
+Testes Automatizados (Pytest): Valida as funcionalidades de registro e listagem de medicamentos.
 
-1. Registrar Medicamento
-2. Listar Medicamentos
-3. Sair
-Escolha uma opção: 1
-Nome do remédio (ex: Aspirina): Losartana
-Horário (ex: 08:00): 09:00
-✅ Remédio registrado com sucesso!
+Verificação de Ambiente: Garante que todas as dependências do projeto estão funcionando corretamente.
+
+✨ Funcionalidades
+Registrar Medicamento: Cadastro de nome e horário com validação de dados.
+
+Listar Medicamentos: Visualização de todos os itens cadastrados no sistema.
+
+Segurança: Sistema de testes que impede a subida de código com erros para o repositório principal.
+
+💻 Como Instalar e Rodar
+Clone o repositório:
+
+Bash
+git clone https://github.com/GabrielMSM2/CuidadosCLI.git
+cd CuidadosCLI
+Instale as dependências:
+
+Bash
+pip install -r requirements.txt
+Execute o projeto:
+
+Bash
+python src/main.py
+Execute os testes locais:
+
+Bash
+python -m pytest tests/
+🛠️ Tecnologias Utilizadas
+Python (Linguagem principal)
+
+Pytest (Testes automatizados)
+
+Flake8 (Padronização de código)
+
+GitHub Actions (Automação de Pipeline)
