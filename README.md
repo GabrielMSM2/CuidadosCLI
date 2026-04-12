@@ -18,18 +18,23 @@ O **CuidadoCLI** é uma aplicação de linha de comando desenvolvida para auxili
 ```bash
 git clone [https://github.com/GabrielMSM2/CuidadosCLI.git](https://github.com/GabrielMSM2/CuidadosCLI.git)
 cd CuidadosCLI
-2. Instale as dependências:
+```
 
-Bash
+**2. Instale as dependências:**
+```bash
 pip install -r requirements.txt
-3. Execute o projeto:
+```
 
-Bash
+**3. Execute o projeto:**
+```bash
 python src/main.py
-4. Execute os testes locais:
+```
 
-Bash
+**4. Execute os testes locais:**
+```bash
 python -m pytest tests/
+```
+
 🛠️ Tecnologias Utilizadas:
 
 Python (Linguagem principal)
