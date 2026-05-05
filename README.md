@@ -24,18 +24,39 @@ analysis (Flake8) and automated tests (Pytest).
 
 ## 💻 How to Install and Run
 
-### 1. Clone the repository
+**1. Clone the repository**
+
+```bash
+
 git clone https://github.com/GabrielMSM2/CuidadosCLI.git
+
 cd CuidadosCLI
 
-### 2. Install dependencies
+```
+
+**2. Install dependencies**
+
+```bash
+
 pip install -r requirements.txt
 
-### 3. Run the project
+```
+
+**3. Run the project**
+
+```bash
+
 python src/main.py
 
-### 4. Run local tests
+```
+
+**4. Run local tests**
+
+```bash
+
 python -m pytest tests/
+
+```
 
 ## 🔧 Technologies Used
 - **Python** — Core language
