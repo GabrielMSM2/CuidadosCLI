@@ -1,46 +1,44 @@
 # CuidadoCLI 💊
 
-[![CI Pipeline](https://github.com/GabrielMSM2/CuidadosCLI/actions/workflows/ci.yml/badge.svg)](https://github.com/GabrielMSM2/CuidadosCLI/actions)
+![CI Pipeline](https://github.com/GabrielMSM2/CuidadosCLI/actions/workflows/ci.yml/badge.svg)
 
-O **CuidadoCLI** é uma aplicação de linha de comando desenvolvida para auxiliar cuidadores e familiares na organização de horários de medicamentos. O foco principal é a simplicidade e a confiabilidade, garantindo que o registro e a consulta de remédios sejam feitos de forma rápida e segura.
+CuidadoCLI is a command-line application designed to help
+caregivers and family members manage medication schedules.
+The main focus is simplicity and reliability, ensuring that
+medication records and queries are done quickly and safely.
 
-🎯 **Problema Real:** Dificuldade no controle de múltiplos horários de medicamentos para idosos ou pessoas em tratamentos contínuos.
+## 🎯 Real Problem
+Difficulty managing multiple medication schedules for elderly
+people or patients undergoing continuous treatment.
 
-⚙️ **Integração Contínua (CI):** Este projeto implementa um pipeline de CI via GitHub Actions. A cada atualização no código, o servidor executa automaticamente a análise estática (Flake8) e os testes (Pytest).
+## ⚙️ Continuous Integration (CI)
+This project implements a CI pipeline via GitHub Actions.
+On every code update, the server automatically runs static
+analysis (Flake8) and automated tests (Pytest).
 
-✨ **Funcionalidades:**
-- **Registrar Medicamento:** Cadastro de nome e horário com validação de dados.
-- **Listar Medicamentos:** Visualização de todos os itens cadastrados no sistema.
+## ✨ Features
+- **Register Medication:** Add medication name and schedule
+  with data validation.
+- **List Medications:** View all items registered in the
+  system.
 
-💻 **Como Instalar e Rodar:**
+## 💻 How to Install and Run
 
-**1. Clone o repositório:**
-```bash
-git clone [https://github.com/GabrielMSM2/CuidadosCLI.git](https://github.com/GabrielMSM2/CuidadosCLI.git)
+### 1. Clone the repository
+git clone https://github.com/GabrielMSM2/CuidadosCLI.git
 cd CuidadosCLI
-```
 
-**2. Instale as dependências:**
-```bash
+### 2. Install dependencies
 pip install -r requirements.txt
-```
 
-**3. Execute o projeto:**
-```bash
+### 3. Run the project
 python src/main.py
-```
 
-**4. Execute os testes locais:**
-```bash
+### 4. Run local tests
 python -m pytest tests/
-```
 
-🛠️ Tecnologias Utilizadas:
-
-Python (Linguagem principal)
-
-Pytest (Testes automatizados)
-
-Flake8 (Padronização de código)
-
-GitHub Actions (Automação de Pipeline)
+## 🔧 Technologies Used
+- **Python** — Core language
+- **Pytest** — Automated testing
+- **Flake8** — Code standardization
+- **GitHub Actions** — Pipeline automation
