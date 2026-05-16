@@ -1,46 +1,90 @@
 # CuidadoCLI 💊
 
-[![CI Pipeline](https://github.com/GabrielMSM2/CuidadosCLI/actions/workflows/ci.yml/badge.svg)](https://github.com/GabrielMSM2/CuidadosCLI/actions)
+![CI Pipeline](https://github.com/GabrielMSM2/CuidadosCLI/actions/workflows/ci.yml/badge.svg)
 
-O **CuidadoCLI** é uma aplicação de linha de comando desenvolvida para auxiliar cuidadores e familiares na organização de horários de medicamentos. O foco principal é a simplicidade e a confiabilidade, garantindo que o registro e a consulta de remédios sejam feitos de forma rápida e segura.
+CuidadoCLI is a command-line application designed to help
+caregivers and family members manage medication schedules.
+The main focus is simplicity and reliability, ensuring that
+medication records and queries are done quickly and safely.
 
-🎯 **Problema Real:** Dificuldade no controle de múltiplos horários de medicamentos para idosos ou pessoas em tratamentos contínuos.
+## 🎯 Real Problem
 
-⚙️ **Integração Contínua (CI):** Este projeto implementa um pipeline de CI via GitHub Actions. A cada atualização no código, o servidor executa automaticamente a análise estática (Flake8) e os testes (Pytest).
+Difficulty managing multiple medication schedules for elderly
+people or patients undergoing continuous treatment.
 
-✨ **Funcionalidades:**
-- **Registrar Medicamento:** Cadastro de nome e horário com validação de dados.
-- **Listar Medicamentos:** Visualização de todos os itens cadastrados no sistema.
+## ⚙️ Continuous Integration (CI)
 
-💻 **Como Instalar e Rodar:**
+This project implements a CI pipeline via GitHub Actions.
+On every code update, the server automatically runs static
+analysis (Flake8) and automated tests (Pytest).
 
-**1. Clone o repositório:**
+## ✨ Features
+
+- **Register Medication:** Add medication name and schedule
+  with data validation.
+- **List Medications:** View all items registered in the
+  system.
+- **Lookup Medication Info:** Query clinical information from
+  the OpenFDA public API directly in the terminal.
+
+## 🔌 External API Integration
+
+CuidadoCLI integrates the **[OpenFDA API](https://api.fda.gov)**,
+a free public database maintained by the U.S. Food and Drug
+Administration, allowing users to query clinical information
+about medications directly from the terminal.
+No API key required. Access it via menu option `3. Consultar informações do medicamento`.
+
+## 💻 How to Install and Run
+
+**1. Clone the repository**
 ```bash
-git clone [https://github.com/GabrielMSM2/CuidadosCLI.git](https://github.com/GabrielMSM2/CuidadosCLI.git)
+git clone https://github.com/GabrielMSM2/CuidadosCLI.git
 cd CuidadosCLI
 ```
 
-**2. Instale as dependências:**
+**2. Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-**3. Execute o projeto:**
+**3. Run the project**
 ```bash
 python src/main.py
 ```
 
-**4. Execute os testes locais:**
+**4. Run local tests**
 ```bash
 python -m pytest tests/
 ```
 
-🛠️ Tecnologias Utilizadas:
+## 🚀 Deploy
 
-Python (Linguagem principal)
+CuidadoCLI is a CLI application publicly available via GitHub.
 
-Pytest (Testes automatizados)
+**1. Clone the repository on the entrega-intermediaria branch:**
+```bash
+git clone https://github.com/GabrielMSM2/CuidadosCLI.git
+cd CuidadosCLI
+git checkout entrega-intermediaria
+```
 
-Flake8 (Padronização de código)
+**2. Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
 
-GitHub Actions (Automação de Pipeline)
+**3. Run the application:**
+```bash
+python src/main.py
+```
+
+👉 **Public repository:** https://github.com/GabrielMSM2/CuidadosCLI
+
+## 🔧 Technologies Used
+
+- **Python** — Core language
+- **Pytest** — Automated testing
+- **Flake8** — Code standardization
+- **Requests** — HTTP communication with external API
+- **GitHub Actions** — Pipeline automation
