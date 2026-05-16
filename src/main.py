@@ -1,4 +1,5 @@
 from manager import MedicationManager
+from api_client import fetch_medication_info
 
 
 def main():
@@ -9,7 +10,8 @@ def main():
     while True:
         print("\n1. Registrar Medicamento")
         print("2. Listar Medicamentos")
-        print("3. Sair")
+        print("3. Consultar informações do medicamento")
+        print("4. Sair")
         choice = input("Escolha uma opção: ")
 
         if choice == '1':
@@ -31,8 +33,20 @@ def main():
                     print(f"- {med['name']} às {med['time']}")
 
         elif choice == '3':
+            name = input("Nome do medicamento para consultar (em inglês, ex: Aspirin): ")
+            print("🔍 Consultando informações na base OpenFDA...")
+            info = fetch_medication_info(name)
+            if info:
+                print(f"\n📋 Medicamento: {info['name']}")
+                print(f"   Fabricante : {info['manufacturer']}")
+                print(f"   Finalidade : {info['purpose']}")
+            else:
+                print("❌ Medicamento não encontrado ou serviço indisponível.")
+
+        elif choice == '4':
             print("Saindo... Cuide-se bem!")
             break
+
         else:
             print("❌ Opção inválida. Tente novamente.")
 
