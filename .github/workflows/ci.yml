@@ -32,3 +32,5 @@ jobs:
         python -m pytest tests/
       env:
         PYTHONPATH: ${{ github.workspace }}/src
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
